@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+ps ax | grep bright | cut -f1 -d" " | xargs kill -9
+
+while [ 1 ]; do xbacklight -set 2; xbacklight -set 1; sleep .1; done

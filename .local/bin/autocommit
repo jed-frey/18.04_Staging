@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+while [ 1 ];
+do
+git commit -a -m "Git Auto Commit: `date`"
+git push
+sleep 300
+done

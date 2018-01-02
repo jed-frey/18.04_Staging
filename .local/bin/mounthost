@@ -1,0 +1,4 @@
+#!/bin/sh
+
+showmount -e ${1} | cut -f1 -d" " | tail -n +2 | xargs -n1 -I{} sudo mkdir -p {}
+showmount -e ${1} | cut -f1 -d" " | tail -n +2 | xargs -n1 -I{} sudo mount ${1}:{} {}

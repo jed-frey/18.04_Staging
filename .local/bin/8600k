@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+wakeonlan 68:05:ca:30:83:aa
+wakeonlan 30:9c:23:68:c9:97
+
+xfreerdp /u:Jed /v:172.16.3.79 /w:1920 /h:1060 +fonts +clipboard
