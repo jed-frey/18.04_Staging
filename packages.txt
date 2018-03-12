@@ -1,0 +1,9 @@
+git
+screen
+curl
+
+debootstrap
+
+liblapack-dev
+libopenblas-dev
+libatlas-base-dev
