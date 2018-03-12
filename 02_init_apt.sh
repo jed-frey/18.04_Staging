@@ -9,5 +9,5 @@ wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add -
 apt-get update
 apt-get upgrade -y
 
-echo packages.txt | xargs apt-get install -y
+grep -v '#' packages.txt | xargs apt-get install -y
 ./packages.sh | xargs apt-get install -y

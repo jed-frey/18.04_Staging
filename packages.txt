@@ -1,9 +1,19 @@
+# Tools
 git
 screen
 curl
-
 debootstrap
+lm-sensors
 
+#
+intel-microcode
+iucode-tool
+
+# Maths
 liblapack-dev
 libopenblas-dev
 libatlas-base-dev
+
+# Window manager
+awesome
+awesome-extra

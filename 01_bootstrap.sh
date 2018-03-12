@@ -3,7 +3,7 @@ echo 'Acquire::http::Proxy "http://apt-cacher-ng.local:3142";' > /etc/apt/apt.co
 
 apt-get update
 apt-get upgrade -y
-apt-get install -y git
+apt-get install -y git openssh-server
 
 git clone git@github.com:jed-frey/18.04_Staging.git
 
