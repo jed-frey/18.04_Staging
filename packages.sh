@@ -22,4 +22,5 @@ done
 for v in 4.8 5 6 7 8
 do
 	echo gcc-$v
+	echo g++-$v
 done
