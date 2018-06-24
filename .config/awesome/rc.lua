@@ -17,10 +17,6 @@ require("awful.hotkeys_popup.keys")
 -- Load Debian menu entries
 local debian = require("debian.menu")
 
--- Battery
-local battery_widget = require("battery-widget")
-local battery = battery_widget({adapter = "BAT0"})
-
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
@@ -224,7 +220,6 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             wibox.widget.systray(),
             mytextclock,
-            battery,
             s.mylayoutbox,
         },
     }
@@ -566,6 +561,9 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 
 -- Boot programs.
+
+-- Dvorak Please.
+awful.util.spawn("setxkbmap dvorak")
 -- Network manager 
 awful.util.spawn("nm-applet")
 -- Disable tap to click.
