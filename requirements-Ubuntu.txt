@@ -1,0 +1,21 @@
+git # 18.04
+openssh-server # 18.04
+openssh-sftp-server # 18.04
+autofs  # 18.04
+nfs-kernel-server # 18.04
+openssh-known-hosts # 18.04
+zfsutils-linux # 18.04
+screen # 18.04
+tcsh # 18.04
+chromium-browser  # 18.04
+python3-venv  # 18.04
+python3.7-venv  # 18.04
+nmap # 18.04
+
+virtualbox # 18.04
+virtualbox-qt  # 18.04
+android-tools-adb # 18.04
+
+thunderbird # 18.04
+
+debootstrap# 18.04

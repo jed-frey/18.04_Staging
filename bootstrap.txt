@@ -1,0 +1,40 @@
+Installation from a fresh Ubuntu install.
+
+Developed on Xubuntu 18.04
+Tested on Xubuntu 18.04
+
+echo Acquire::http::Proxy "http://10.0.0.20:3142"; > /etc/apt/apt.conf.d/90proxy
+
+
+
+ wget https://github.com/jed-frey/make_sandwich/archive/master.zip
+
+unzip master.zip 
+
+mv make_sandwich-master/ .mk_inc
+
+cp .mk_inc/Makefile ./
+
+sudo apt install make      
+
+sudo make env.host
+
+# Local virtual env for scratch development.
+make env VENV=.venv3
+
+    cat /dev/zero | ssh-keygen -q -N ""
+
+Add key to:
+
+https://github.com/settings/ssh/new
+
+
+echo deb http://apt.llvm.org/bionic/ llvm-toolchain-bionic main > /etc/apt/sources.list.d/llvm.list
+echo deb http://apt.llvm.org/bionic/ llvm-toolchain-bionic-5.0 main >> /etc/apt/sources.list.d/llvm.list
+echo deb http://apt.llvm.org/bionic/ llvm-toolchain-bionic-6.0 main >> /etc/apt/sources.list.d/llvm.list
+
+ wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key| apt-key add -
+
+apt-get update
+
+add-apt-repository ppa:graphics-drivers/ppa
